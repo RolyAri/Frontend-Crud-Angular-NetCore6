@@ -2,8 +2,8 @@
     <h1>Lista de empleados</h1>
     <button mat-raised-button color="primary" (click)="dialogNewEmpleado()">Agregar Empleado</button>
     <mat-form-field appearance="standard">
-      <mat-label>Filter</mat-label>
-      <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+      <mat-label>Filtro</mat-label>
+      <input matInput (keyup)="applyFilter($event)" #input>
     </mat-form-field>
     <div class="mat-elevation-z8">
       <table mat-table [dataSource]="dataSource">
